@@ -1,8 +1,10 @@
 import TaskPackage.ConsoleUI;
+import TaskPackage.TaskStorage;
 
 public class Main {
     public static void main(String[] args) {
-        ConsoleUI ui = new ConsoleUI(null);
+        TaskStorage storage = new TaskStorage();
+        ConsoleUI ui = new ConsoleUI(storage);
         ui.start();
     }
 }
