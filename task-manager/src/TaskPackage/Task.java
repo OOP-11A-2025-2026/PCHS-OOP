@@ -1,18 +1,5 @@
 package TaskPackage;
 
-enum Category{
-    SCHOOL,
-    UNIVERSITY,
-    SPORT,
-    OTHER
-}
-
-enum Status{
-    TODO,
-    IN_PROGRESS,
-    COMPLETED
-}
-
 public class Task {
     private int id;
     private String title;
