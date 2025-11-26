@@ -128,7 +128,7 @@ public class ConsoleUI {
 
         try {
             repository.addTask(t);
-            System.out.println("Task added (delegated to repository): " + t);
+            System.out.println("Task added (delegated to repository)");
         } catch (Exception e) {
             System.out.println("Failed to add task via repository: " + e.getMessage());
         }
@@ -202,7 +202,7 @@ public class ConsoleUI {
                     return;
             }
             repository.updateTask(id, existing);
-            System.out.println("Task updated: " + existing);
+            System.out.println("Task updated");
         } catch (IllegalArgumentException iae) {
             System.out.println("Validation error: " + iae.getMessage());
         } catch (Exception e) {
